@@ -1,0 +1,227 @@
+{
+  "week": "2026-w42",
+  "summary": "Two big model releases drew the most attention, while developer installs grew fastest for TypeScript agent tools, tools that test AI apps, and the faster-whisper speech library.",
+  "picks": [
+    {
+      "title": "DeepSeek's V4.1 Flash update tops Hugging Face trending",
+      "signal": "#1 trending on Hugging Face",
+      "tags": [
+        "models",
+        "open weights"
+      ],
+      "note": "DeepSeek published V4.1-Flash-1017, an update to its V4.1 Flash model, as open weights under the MIT license, so anyone with enough hardware can download and run it. It reached #1 on Hugging Face's trending list, the main site for sharing open models, with 1,099 likes, and its Hacker News thread reached 805 points. The model card reports gains in reasoning, coding and agent tasks over the previous Flash release, with shorter answers.",
+      "sources": [
+        [
+          "Model card",
+          "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+        ],
+        [
+          "Hacker News thread",
+          "https://news.ycombinator.com/item?id=50129045"
+        ]
+      ],
+      "chart": {
+        "stats": [
+          [
+            "Hugging Face trending",
+            "hfrank|deepseek-ai/DeepSeek-V4.1-Flash-1017"
+          ],
+          [
+            "Hugging Face likes",
+            "hf|deepseek-ai/DeepSeek-V4.1-Flash-1017|likes"
+          ],
+          [
+            "Hacker News points",
+            "hn|DeepSeek-v4.1-Flash-1017"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Gemini 4 Argon draws the week's top AI thread on Hacker News",
+      "signal": "1,465 Hacker News points",
+      "tags": [
+        "models",
+        "assistants"
+      ],
+      "note": "Google DeepMind released Gemini 4 Argon, its newest frontier model. It is available in the Gemini app, Google AI Studio and Antigravity, its agent-based coding tool, and to Google AI Pro and Ultra subscribers. Its Hacker News thread reached 1,465 points and 1,044 comments, the most points of any AI story this week. Wikipedia views of the Gemini article have not risen with it so far: their trend is 3%.",
+      "sources": [
+        [
+          "Gemini 4 Argon",
+          "https://deepmind.google/models/gemini/"
+        ],
+        [
+          "Hacker News thread",
+          "https://news.ycombinator.com/item?id=50073879"
+        ]
+      ],
+      "chart": {
+        "stats": [
+          [
+            "Hacker News points",
+            "hn|Gemini 4 Argon"
+          ],
+          [
+            "Gemini on Wikipedia, trend",
+            "tool|Gemini|change_4w"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "TypeScript tools for building AI apps are growing",
+      "signal": "Mastra +36%, Vercel AI SDK +32%",
+      "tags": [
+        "agents",
+        "npm"
+      ],
+      "note": "Installs of Mastra, a TypeScript framework for building AI agents, grew 36%. The Vercel AI SDK, a TypeScript toolkit for building AI apps and agents, grew 32%; it had about 32.3 million installs last week. The MCP TypeScript SDK grew 27%; MCP (Model Context Protocol) is a standard way to connect AI assistants to tools and data. All three are npm packages that developers use to build AI apps in TypeScript.",
+      "sources": [
+        [
+          "Vercel AI SDK",
+          "https://github.com/vercel/ai"
+        ],
+        [
+          "Mastra",
+          "https://github.com/mastra-ai/mastra"
+        ]
+      ],
+      "chart": {
+        "highlight": [
+          "Mastra",
+          "Vercel AI SDK",
+          "MCP TypeScript SDK"
+        ],
+        "context": [
+          "@median"
+        ]
+      }
+    },
+    {
+      "title": "Tools that test AI apps are being installed more",
+      "signal": "Inspect +38%, Ragas +36%, DeepEval +30%",
+      "tags": [
+        "evaluation",
+        "PyPI"
+      ],
+      "note": "Evaluation tools check whether an AI system gives good answers, for example by scoring its replies against test cases. Installs of Inspect, made by the UK AI Security Institute, grew 38%, Ragas grew 36% and DeepEval 30%. LangChain, a widely used framework for building the apps themselves, fell 7%. Ragas has had no new release since January, so its rise is not from a new version.",
+      "sources": [
+        [
+          "Inspect",
+          "https://github.com/UKGovernmentBEIS/inspect_ai"
+        ],
+        [
+          "Ragas",
+          "https://github.com/explodinggradients/ragas"
+        ]
+      ],
+      "chart": {
+        "highlight": [
+          "Inspect",
+          "Ragas",
+          "DeepEval"
+        ],
+        "context": [
+          "Langfuse",
+          "LangChain",
+          "@median"
+        ]
+      }
+    },
+    {
+      "title": "faster-whisper speech-to-text installs rise with no new release",
+      "signal": "faster-whisper +63%, Whisper +15%",
+      "tags": [
+        "audio",
+        "PyPI"
+      ],
+      "note": "faster-whisper, a library that runs OpenAI's Whisper speech-to-text model faster and with less memory, grew 63% to about 3.6 million installs last week. The original Whisper package grew 15%, and the ElevenLabs SDK, used to generate AI voices, grew 8%. faster-whisper's last release was in October 2025, so the rise is not from a new version. It is the most installed of the speech libraries tracked here.",
+      "sources": [
+        [
+          "faster-whisper",
+          "https://github.com/SYSTRAN/faster-whisper"
+        ],
+        [
+          "faster-whisper on PyPI",
+          "https://pypi.org/project/faster-whisper/"
+        ]
+      ],
+      "chart": {
+        "highlight": [
+          "faster-whisper"
+        ],
+        "context": [
+          "Whisper",
+          "ElevenLabs SDK"
+        ]
+      }
+    }
+  ],
+  "also_repos": [
+    "ARahim3/DigUp",
+    "wheresryan22/anatomy",
+    "CopilotKit/OpenDots",
+    "edenfunf/reelmimic"
+  ],
+  "also_hn_exclude": [
+    "Gemini 4 Argon",
+    "DeepSeek-v4.1-Flash-1017",
+    "DeepSeek: DeepSeek v4.1 Flash",
+    "OpenAI engineer arrested"
+  ],
+  "skipped": [
+    [
+      "Suno on Wikipedia (+171%)",
+      "The article's views start from a very low base and climb for weeks with no release or event to check; not a reliable trend."
+    ],
+    [
+      "Character.ai on Wikipedia",
+      "Views jumped in one week with no product release to check against a primary source."
+    ],
+    [
+      "Vibe coding on Wikipedia (+32%)",
+      "A steady rise in lookups, but no single release or event explains it."
+    ],
+    [
+      "GitHub Copilot CLI (−49%)",
+      "Installs are falling back after a short bump a few weeks ago, so the trend overstates the drop."
+    ],
+    [
+      "Claude Code installs",
+      "It ships a native installer, so npm installs fall as people switch; not a reliable trend."
+    ],
+    [
+      "Artificial general intelligence on Wikipedia (−43%)",
+      "The fall is measured against an earlier one-week spike, not a real decline."
+    ],
+    [
+      "FLUX 3 Image Klein",
+      "A new open image model for generation and editing, but with fewer likes so far than other trending models."
+    ],
+    [
+      "EmbeddingGemma 2",
+      "Google's multimodal embedding model is still trending and powers new apps, but it came out in September."
+    ],
+    [
+      "OpenAI engineer arrested",
+      "News about people, not about AI tools."
+    ]
+  ],
+  "unreliable": [
+    "Claude Code",
+    "GitHub Copilot CLI",
+    "Suno",
+    "Character.ai",
+    "Artificial general intelligence",
+    "SGLang"
+  ],
+  "watchlist_changes": [],
+  "review": {
+    "mode": "agent",
+    "checked": 5,
+    "fixed": [
+      "TypeScript tools for building AI apps are growing"
+    ],
+    "dropped": []
+  }
+}
