@@ -147,7 +147,8 @@ def check_picks(week):
     if p["picks"] and not (p.get("summary") and len(p["summary"]) <= 220):
         fail("summary missing or longer than 220 characters")
 
-    texts = [("summary", p.get("summary") or "", all_pct | {abs(median)}, set(w.tools))]
+    texts = [("summary", p.get("summary") or "", all_pct | {abs(w.median_for([])), abs(w.median_for(
+        [n for n in w.tools if w.tools[n]["registry"] == "Wikipedia"][:1]))}, set(w.tools))]
     for i, k in enumerate(p["picks"], 1):
         where = f"pick {i} ({k.get('title', '?')[:40]})"
         for f in ("title", "note", "signal", "sources"):
@@ -160,7 +161,7 @@ def check_picks(week):
         named = set(c.get("highlight", [])) | set(c.get("context", [])) | {n for n in w.tools if n in text}
         allowed = {abs(w.tools[n]["change_4w"]) for n in named if n in w.tools and w.tools[n]["change_4w"] is not None}
         if "@median" in named:
-            allowed.add(abs(median))
+            allowed.add(abs(w.median_for(c.get("highlight", []))))
         texts.append((where, text, allowed, named))
         for n in c.get("highlight", []) + [x for x in c.get("context", []) if x != "@median"]:
             if n not in w.tools or w.tools[n]["change_4w"] is None:

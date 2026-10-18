@@ -61,7 +61,9 @@ video or audio when something moved there. Good picks:
 - a clear movement in installs, compared against the tools next to it;
 - a release or model the data shows people paid attention to (HN points, HF trending, stars a day);
 - a new repo growing fast, if it's a real tool and not a toy.
-A spike in page views with no checkable cause is not a pick; at most it goes in `skipped`.
+A jump in page views or installs with no cause you can check on a primary source is not a pick;
+at most it goes in `skipped`. Sources must be pages a reader can open: if a registry page blocks
+bots (npm often does), link the repo or release notes instead.
 
 Leave out: news about people, companies, funding, lawsuits and politics; anything adult,
 crypto or gambling; jailbreaks; and any claim you can't check against a primary source (the
@@ -97,12 +99,12 @@ installer, so its npm count falls when people switch), or a series full of spike
   "summary": "One sentence, up to 220 characters, saying what this week's picks add up to.",
   "picks": [
     {
-      "title": "The TypeScript agent stack is growing fastest",
-      "signal": "Mastra +36%, Vercel AI SDK +32%",
-      "tags": ["agents", "npm"],
-      "note": "Two to four sentences: what moved, compared with what, and why a builder should care.",
-      "sources": [["Mastra on npm", "https://www.npmjs.com/package/@mastra/core"]],
-      "chart": {"highlight": ["Mastra", "Vercel AI SDK"], "context": ["LangGraph", "@median"]}
+      "title": "<what moved, in a short sentence>",
+      "signal": "<Tool A +NN%, Tool B +NN%>",
+      "tags": ["<area>"],
+      "note": "Two to four sentences: what moved, compared with what, and why it matters.",
+      "sources": [["<Tool A> repo", "https://github.com/<owner>/<repo>"]],
+      "chart": {"highlight": ["<Tool A>", "<Tool B>"], "context": ["<Tool C>", "@median"]}
     },
     {
       "title": "A model release",
@@ -125,7 +127,8 @@ installer, so its npm count falls when people switch), or a series full of spike
 
 - `chart` is optional. Bar charts take watchlist tool names exactly as they appear in the data
   (`highlight` for the tools the note is about, `context` for comparison; `@median` is the
-  watchlist median). Stat tiles take references: `hn|<title start>`, `hf|<model id>|likes`,
+  median trend of the same kind: all Wikipedia topics if the highlighted items are topics, all
+  packages otherwise). Never mix topics and packages in one chart. Stat tiles take references: `hn|<title start>`, `hf|<model id>|likes`,
   `hfrank|<model id>`, `repo|<owner/name>|stars` or `per_day`, `tool|<name>|last_week` or `change_4w`.
   Use bars for a movement, stat tiles for a single release, nothing when neither fits.
 - `also_repos`: up to 5 repos from `new_repos` that are real, useful AI projects. Leave out
@@ -164,8 +167,9 @@ Start a general-purpose subagent with this task, filling in the week:
 > Reply with JSON only: `{"verdicts": [{"pick": <1-based index>, "verdict": "keep" | "fix" | "drop",
 > "problems": ["..."], "suggested_note": "<only for fix>"}]}`
 
-Apply it: keep as is, rewrite a `fix` using the problems listed (keep it to what the sources
-support), remove a `drop`. Record the outcome in `review`. If you can't start a subagent, do the
+Apply it: rewrite a `fix` using the problems listed (keep it to what the sources support),
+remove a `drop`, and for a `keep` apply any small problems it lists. Record the outcome in
+`review`, using the final titles; `fixed` lists only picks with a `fix` verdict. If you can't start a subagent, do the
 review yourself as a separate pass, re-reading every source, and set `review.mode` to `"self"`.
 
 ## Never

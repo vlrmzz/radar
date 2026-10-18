@@ -88,6 +88,12 @@ class Week:
         self.unreliable = set(self.p.get("unreliable", []))
         self.changes = [t["change_4w"] for t in self.tools.values() if t["change_4w"] is not None]
 
+    def median_for(self, names):
+        """Median trend of the same kind as the named items: page views or installs, never both."""
+        wiki = any(self.tools[n]["registry"] == "Wikipedia" for n in names if n in self.tools)
+        return round(statistics.median(t["change_4w"] for t in self.tools.values()
+                                       if t["change_4w"] is not None and (t["registry"] == "Wikipedia") == wiki))
+
     def stat_value(self, ref):
         kind, key, *field = ref.split("|")
         d = self.d
@@ -116,7 +122,8 @@ class Week:
         rows = [(n, self.tools[n]["change_4w"], "up" if self.tools[n]["change_4w"] >= 0 else "down") for n in c["highlight"]]
         for n in c.get("context", []):
             if n == "@median":
-                rows.append(("Watchlist median", round(statistics.median(self.changes)), "ctx"))
+                wiki = any(self.tools[h]["registry"] == "Wikipedia" for h in c["highlight"])
+                rows.append(("Median, all topics" if wiki else "Median, all tools", self.median_for(c["highlight"]), "ctx"))
             else:
                 rows.append((n, self.tools[n]["change_4w"], "ctx"))
         named = "".join(f'<span class="k {kd}"></span>' for kd in ("up", "down") if any(x[2] == kd for x in rows))
