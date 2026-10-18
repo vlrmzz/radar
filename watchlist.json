@@ -1,0 +1,116 @@
+{
+  "AI assistants and model makers": [
+    {"name": "ChatGPT", "wiki": "ChatGPT"},
+    {"name": "Claude", "wiki": "Claude (AI)"},
+    {"name": "Gemini", "wiki": "Google Gemini"},
+    {"name": "Microsoft Copilot", "wiki": "Microsoft Copilot"},
+    {"name": "Grok", "wiki": "Grok (chatbot)"},
+    {"name": "Meta AI", "wiki": "Meta AI"},
+    {"name": "DeepSeek", "wiki": "DeepSeek"},
+    {"name": "Qwen", "wiki": "Qwen"},
+    {"name": "Mistral AI", "wiki": "Mistral AI"},
+    {"name": "Perplexity", "wiki": "Perplexity AI"},
+    {"name": "Character.ai", "wiki": "Character.ai"}
+  ],
+  "Image, video and audio": [
+    {"name": "Midjourney", "wiki": "Midjourney"},
+    {"name": "Sora", "wiki": "Sora (text-to-video model)"},
+    {"name": "Veo", "wiki": "Veo (text-to-video model)"},
+    {"name": "Stable Diffusion", "wiki": "Stable Diffusion"},
+    {"name": "Runway", "wiki": "Runway (company)"},
+    {"name": "Suno", "wiki": "Suno"},
+    {"name": "ElevenLabs", "wiki": "ElevenLabs"}
+  ],
+  "Ideas people look up": [
+    {"name": "Large language model", "wiki": "Large language model"},
+    {"name": "AI agent", "wiki": "AI agent"},
+    {"name": "Vibe coding", "wiki": "Vibe coding"},
+    {"name": "Model Context Protocol", "wiki": "Model Context Protocol"},
+    {"name": "Artificial general intelligence", "wiki": "Artificial general intelligence"}
+  ],
+  "Model SDKs and gateways": [
+    {"name": "OpenAI SDK", "pypi": "openai"},
+    {"name": "Anthropic SDK", "pypi": "anthropic"},
+    {"name": "Google Gen AI SDK", "pypi": "google-genai"},
+    {"name": "Mistral SDK", "pypi": "mistralai"},
+    {"name": "LiteLLM", "pypi": "litellm"},
+    {"name": "Ollama (Python)", "pypi": "ollama"}
+  ],
+  "Coding agents": [
+    {"name": "Claude Code", "npm": "@anthropic-ai/claude-code", "repo": "anthropics/claude-code"},
+    {"name": "Codex CLI", "npm": "@openai/codex", "repo": "openai/codex"},
+    {"name": "Gemini CLI", "npm": "@google/gemini-cli", "repo": "google-gemini/gemini-cli"},
+    {"name": "GitHub Copilot CLI", "npm": "@github/copilot"},
+    {"name": "opencode", "npm": "opencode-ai", "repo": "sst/opencode"},
+    {"name": "Qwen Code", "npm": "@qwen-code/qwen-code"},
+    {"name": "Cline CLI", "npm": "cline"}
+  ],
+  "Agent frameworks": [
+    {"name": "LangGraph", "pypi": "langgraph", "repo": "langchain-ai/langgraph"},
+    {"name": "OpenAI Agents SDK", "pypi": "openai-agents", "repo": "openai/openai-agents-python"},
+    {"name": "Claude Agent SDK", "pypi": "claude-agent-sdk", "repo": "anthropics/claude-agent-sdk-python"},
+    {"name": "Pydantic AI", "pypi": "pydantic-ai", "repo": "pydantic/pydantic-ai"},
+    {"name": "CrewAI", "pypi": "crewai", "repo": "crewAIInc/crewAI"},
+    {"name": "Google ADK", "pypi": "google-adk", "repo": "google/adk-python"},
+    {"name": "smolagents", "pypi": "smolagents", "repo": "huggingface/smolagents"},
+    {"name": "Strands Agents", "pypi": "strands-agents", "repo": "strands-agents/sdk-python"},
+    {"name": "Microsoft Agent Framework", "pypi": "agent-framework", "repo": "microsoft/agent-framework"},
+    {"name": "Mastra", "npm": "@mastra/core", "repo": "mastra-ai/mastra"},
+    {"name": "Vercel AI SDK", "npm": "ai", "repo": "vercel/ai"}
+  ],
+  "LLM app frameworks": [
+    {"name": "LangChain", "pypi": "langchain"},
+    {"name": "LlamaIndex", "pypi": "llama-index-core"},
+    {"name": "Haystack", "pypi": "haystack-ai"},
+    {"name": "DSPy", "pypi": "dspy"},
+    {"name": "Instructor", "pypi": "instructor"}
+  ],
+  "Browser and computer use": [
+    {"name": "Browser Use", "pypi": "browser-use"},
+    {"name": "Playwright MCP", "npm": "@playwright/mcp"},
+    {"name": "Crawl4AI", "pypi": "crawl4ai"}
+  ],
+  "Retrieval and vector databases": [
+    {"name": "Chroma", "pypi": "chromadb"},
+    {"name": "Qdrant", "pypi": "qdrant-client"},
+    {"name": "Pinecone", "pypi": "pinecone"},
+    {"name": "Weaviate", "pypi": "weaviate-client"},
+    {"name": "LanceDB", "pypi": "lancedb"},
+    {"name": "Sentence Transformers", "pypi": "sentence-transformers"},
+    {"name": "Docling", "pypi": "docling"}
+  ],
+  "Evaluation and tracing": [
+    {"name": "Langfuse", "pypi": "langfuse", "repo": "langfuse/langfuse"},
+    {"name": "LangSmith", "pypi": "langsmith", "repo": "langchain-ai/langsmith-sdk"},
+    {"name": "Inspect", "pypi": "inspect-ai", "repo": "UKGovernmentBEIS/inspect_ai"},
+    {"name": "DeepEval", "pypi": "deepeval", "repo": "confident-ai/deepeval"},
+    {"name": "Ragas", "pypi": "ragas", "repo": "explodinggradients/ragas"},
+    {"name": "Phoenix", "pypi": "arize-phoenix", "repo": "Arize-ai/phoenix"},
+    {"name": "Opik", "pypi": "opik", "repo": "comet-ml/opik"}
+  ],
+  "Fine-tuning and RL": [
+    {"name": "TRL", "pypi": "trl", "repo": "huggingface/trl"},
+    {"name": "PEFT", "pypi": "peft", "repo": "huggingface/peft"},
+    {"name": "Unsloth", "pypi": "unsloth", "repo": "unslothai/unsloth"},
+    {"name": "verl", "pypi": "verl", "repo": "volcengine/verl"},
+    {"name": "Axolotl", "pypi": "axolotl", "repo": "axolotl-ai-cloud/axolotl"}
+  ],
+  "Inference and local models": [
+    {"name": "Transformers", "pypi": "transformers"},
+    {"name": "vLLM", "pypi": "vllm", "repo": "vllm-project/vllm"},
+    {"name": "SGLang", "pypi": "sglang", "repo": "sgl-project/sglang"},
+    {"name": "llama.cpp (Python)", "pypi": "llama-cpp-python", "repo": "abetlen/llama-cpp-python"},
+    {"name": "MLX LM", "pypi": "mlx-lm", "repo": "ml-explore/mlx-lm"}
+  ],
+  "Image, video and speech libraries": [
+    {"name": "Diffusers", "pypi": "diffusers"},
+    {"name": "faster-whisper", "pypi": "faster-whisper"},
+    {"name": "Whisper", "pypi": "openai-whisper"},
+    {"name": "ElevenLabs SDK", "pypi": "elevenlabs"}
+  ],
+  "MCP": [
+    {"name": "MCP Python SDK", "pypi": "mcp", "repo": "modelcontextprotocol/python-sdk"},
+    {"name": "MCP TypeScript SDK", "npm": "@modelcontextprotocol/sdk", "repo": "modelcontextprotocol/typescript-sdk"},
+    {"name": "FastMCP", "pypi": "fastmcp", "repo": "jlowin/fastmcp"}
+  ]
+}
