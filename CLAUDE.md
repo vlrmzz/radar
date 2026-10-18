@@ -41,7 +41,9 @@ If `runs.json` already has `WEEK` with status `published`, stop: this week is do
    Warnings (a site that blocks bots) don't need fixing.
 6. **Build.** Run `python3 scripts/finish.py $WEEK published`, then `python3 scripts/render.py`,
    then `python3 scripts/check.py page`. If the page check fails, go to "When a run stops".
-7. **Publish.** `git add -A`, commit as `Week <n>, <year>`, and push to `main`.
+7. **Publish.** First set the commit identity to the public noreply address:
+   `git config user.name vlrmzz && git config user.email 27200919+vlrmzz@users.noreply.github.com`.
+   Then `git add -A`, commit as `Week <n>, <year>`, and push to `main`.
    If the repo has no remote (a local test run), skip the push and say so.
 
 ### When a run stops
@@ -49,7 +51,8 @@ If `runs.json` already has `WEEK` with status `published`, stop: this week is do
 Don't publish a half-made week. Run `python3 scripts/finish.py $WEEK stopped "<one line: what failed>"`.
 It puts back the built page and the watchlist as they were in the last commit, and moves this
 week's picks to `picks/stopped/` so they're kept but not shown. Then `git add -A`, commit as
-`Week <n>, <year>: stopped` and push. Last week's page stays up.
+`Week <n>, <year>: stopped` (with the same commit identity as in step 7) and push. Last week's
+page stays up.
 
 ## Choosing picks
 
