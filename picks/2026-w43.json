@@ -1,0 +1,135 @@
+{
+  "week": "2026-w43",
+  "summary": "DeepSeek added a web search API for agents, a compact open multimodal model trended, and installs of the MCP software kits kept growing.",
+  "picks": [
+    {
+      "title": "DeepSeek adds search and page-fetch APIs for AI agents",
+      "signal": "566 points on Hacker News",
+      "tags": [
+        "models",
+        "developer tools"
+      ],
+      "note": "DeepSeek published two web APIs: one returns search results from its own search engine, the other turns a web page into Markdown text. They are meant for agents and apps that need live web content. The docs say failed, empty or timed-out requests are not charged. The announcement drew 566 points on Hacker News.",
+      "sources": [
+        [
+          "DeepSeek search and fetch docs",
+          "https://api-docs.deepseek.com/guides/search/"
+        ]
+      ],
+      "chart": {
+        "stats": [
+          [
+            "Hacker News points",
+            "hn|DeepSeek search and fetch"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "MiniCPM-V 4.7, a compact open multimodal model, is trending",
+      "signal": "#2 trending on Hugging Face",
+      "tags": [
+        "models",
+        "open models"
+      ],
+      "note": "OpenBMB's MiniCPM-V 4.7 is an open model that reads images and video. It has 35 billion parameters in total; the 'A3B' in its name means about 3 billion are active for each token (a mixture-of-experts design), which keeps it light enough to run on phones. It is released under the Apache-2.0 license and ranks #2 on Hugging Face trending.",
+      "sources": [
+        [
+          "Model card",
+          "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B"
+        ]
+      ],
+      "chart": {
+        "stats": [
+          [
+            "Hugging Face trending",
+            "hfrank|openbmb/MiniCPM-V-4.7-35B-A3B"
+          ],
+          [
+            "Hugging Face likes",
+            "hf|openbmb/MiniCPM-V-4.7-35B-A3B|likes"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Installs of the MCP software kits rise",
+      "signal": "MCP TypeScript SDK +28%, MCP Python SDK +14%",
+      "tags": [
+        "developer tools",
+        "MCP"
+      ],
+      "note": "MCP (Model Context Protocol) is a standard way for AI apps to connect to outside tools and data. Installs of the TypeScript SDK grew 28% and the Python SDK 14%, level with FastMCP at 14%. The TypeScript SDK shipped 1.32.0 on 2 October, which limits when its HTTP client follows redirects.",
+      "sources": [
+        [
+          "MCP TypeScript SDK releases",
+          "https://github.com/modelcontextprotocol/typescript-sdk/releases"
+        ],
+        [
+          "MCP Python SDK releases",
+          "https://github.com/modelcontextprotocol/python-sdk/releases"
+        ]
+      ],
+      "chart": {
+        "highlight": [
+          "MCP TypeScript SDK",
+          "MCP Python SDK"
+        ],
+        "context": [
+          "FastMCP",
+          "@median"
+        ]
+      }
+    }
+  ],
+  "also_repos": [],
+  "also_hn_exclude": [
+    "OpenAI engineer arrested",
+    "Containment and monitoring failures",
+    "AI is a tool and using it well"
+  ],
+  "skipped": [
+    [
+      "opencode installs (+30%)",
+      "Fastest-growing coding agent on npm, but no release or event found to explain it."
+    ],
+    [
+      "Suno on Wikipedia (+171%)",
+      "Views climb from a low base with a one-week spike and no event to check."
+    ],
+    [
+      "Character.ai on Wikipedia",
+      "One-week jump in views with no product release to check against a primary source."
+    ],
+    [
+      "SGLang and Weaviate installs",
+      "Large falls (-62%, -45%) with no release or event to explain them."
+    ],
+    [
+      "Gemini 4 Argon",
+      "Already picked last week; nothing new in the data."
+    ],
+    [
+      "OpenAI engineer arrested",
+      "News about people, not about AI tools."
+    ]
+  ],
+  "unreliable": [
+    "Claude Code",
+    "GitHub Copilot CLI",
+    "Suno",
+    "Character.ai",
+    "Artificial general intelligence",
+    "SGLang"
+  ],
+  "watchlist_changes": [],
+  "review": {
+    "mode": "agent",
+    "checked": 3,
+    "fixed": [
+      "MiniCPM-V 4.7, a compact open multimodal model, is trending",
+      "Installs of the MCP software kits rise"
+    ],
+    "dropped": []
+  }
+}
