@@ -1,0 +1,50 @@
+{
+  "week": "2026-w44",
+  "summary": "DeepSeek released both a new model and the engine that serves it, Anthropic previewed a background-working agent, and Anthropic's Python SDK installs grew fastest of the big model SDKs.",
+  "picks": [
+    {
+      "title": "DeepSeek open-sources DeepInfer, the engine behind its own service",
+      "signal": "2351 points on Hacker News",
+      "tags": ["models", "developer tools"],
+      "note": "DeepInfer is the inference framework (the software that runs a model to answer requests) that DeepSeek says powers its large-scale production services. The open release supports DeepSeek-V4.1-Flash on NVIDIA SM100 GPUs and Huawei Ascend chips, under the Apache-2.0 license. It leaves out some serving parts, such as a KV cache system and load balancing. It was the most discussed AI story on Hacker News this week.",
+      "sources": [["DeepInfer repo", "https://github.com/deepseek-ai/DeepInfer"]],
+      "chart": {"stats": [["Hacker News points", "hn|DeepInfer"], ["Hacker News comments", "hn|DeepInfer|comments"]]}
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 tops Hugging Face trending",
+      "signal": "#1 trending on Hugging Face",
+      "tags": ["models", "open models"],
+      "note": "DeepSeek-V4.1-Flash-1017 is an update to V4.1-Flash. Its model card says it aims at better reasoning, coding, agent and image tasks, with shorter outputs and faster task runs. It accepts text and images and is released under the MIT license. It ranks #1 on Hugging Face trending.",
+      "sources": [["Model card", "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"]],
+      "chart": {"stats": [["Hugging Face trending", "hfrank|deepseek-ai/DeepSeek-V4.1-Flash-1017"], ["Hugging Face likes", "hf|deepseek-ai/DeepSeek-V4.1-Flash-1017|likes"]]}
+    },
+    {
+      "title": "Anthropic previews Claude Duet, an agent that works in the background",
+      "signal": "567 points on Hacker News",
+      "tags": ["assistants"],
+      "note": "Claude Duet is a research preview of an agent that takes a request, works on it in its own cloud environment and reports back. It writes a morning brief and asks before sensitive actions such as sending messages or making payments. The product page says it is powered by Opus 5.5 and is on a waitlist for Pro and Max subscribers in the US.",
+      "sources": [["Claude Duet", "https://claude.com/product/claude-duet"]],
+      "chart": {"stats": [["Hacker News points", "hn|Claude Duet"]]}
+    },
+    {
+      "title": "Anthropic SDK installs grow fastest of the big model SDKs",
+      "signal": "Anthropic SDK +29%, OpenAI SDK +18%",
+      "tags": ["developer tools"],
+      "note": "Installs of the Anthropic Python SDK grew 29%, ahead of the OpenAI SDK at 18% and the Google Gen AI SDK at 12%. The SDK moved to a 2.0 line on 21 October and reached 2.3.0 on 23 October. The 2.0 release adds support for a new API version.",
+      "sources": [["Anthropic SDK releases", "https://github.com/anthropics/anthropic-sdk-python/releases"]],
+      "chart": {"highlight": ["Anthropic SDK"], "context": ["OpenAI SDK", "Google Gen AI SDK", "@median"]}
+    }
+  ],
+  "also_repos": [],
+  "also_hn_exclude": ["DeepSeek banned from U.S.", "Ask HN: If the models are so good", "Ousted Savannah police officer", "No signs of AI payoff", "America has lost 200k"],
+  "skipped": [
+    ["faster-whisper installs (+79%)", "Large jump but the last release was a year ago, so no cause to check."],
+    ["Suno on Wikipedia (+97%)", "Views climb from a low base with no event to check."],
+    ["DeepSeek banned from U.S. federal agencies", "Politics, not a product change."],
+    ["Mastra and Vercel AI SDK installs (+36%, +31%)", "Routine releases only; no event explains the growth."],
+    ["WhatsApp help pages with hidden LLM instructions", "Third-party claim not checked against a primary source."]
+  ],
+  "unreliable": ["Claude Code", "GitHub Copilot CLI", "Suno", "SGLang", "Weaviate"],
+  "watchlist_changes": [],
+  "review": {"mode": "agent", "checked": 4, "fixed": [], "dropped": []}
+}
