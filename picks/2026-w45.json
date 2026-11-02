@@ -1,0 +1,42 @@
+{
+  "week": "2026-w45",
+  "summary": "Google announced Gemini 4 Carbon to a small set of partners, while Mistral and NVIDIA put out large open-weight models for text and speech.",
+  "picks": [
+    {
+      "title": "Google announces Gemini 4 Carbon, its new top model",
+      "signal": "1017 points on Hacker News",
+      "tags": ["models"],
+      "note": "Google calls Gemini 4 Carbon its strongest model, built for long, multi-step coding and security work. It is not broadly available yet. Access starts with a group of cyber defenders and widens to trusted partners, with developers and consumers to follow later. Google lists introductory pricing of $2 per million input tokens and $10 per million output tokens.",
+      "sources": [["Google announcement", "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"], ["Hacker News thread", "https://news.ycombinator.com/item?id=50276792"]],
+      "chart": {"stats": [["Hacker News points", "hn|Gemini 4 Carbon"], ["Hacker News comments", "hn|Gemini 4 Carbon|comments"]]}
+    },
+    {
+      "title": "Mistral Large 4 is a 1-trillion-parameter open-weight model",
+      "signal": "1464 likes on Hugging Face",
+      "tags": ["models", "open models"],
+      "note": "Mistral Large 4 is Mistral's largest open-weight model, a mixture-of-experts design (only a few parts of the model run for each token). It takes text and images, handles very long inputs and supports many languages, including all official EU languages. The license allows commercial use, but running it as a hosted service needs a separate agreement with Mistral. The model card lists vLLM, SGLang, Transformers and llama.cpp as ways to run it.",
+      "sources": [["Model card", "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"]],
+      "chart": {"stats": [["Hugging Face likes", "hf|mistralai/Mistral-Large-4-1T-A52B|likes"]]}
+    },
+    {
+      "title": "NVIDIA releases an open speech model that transcribes in 40 languages",
+      "signal": "620 likes on Hugging Face",
+      "tags": ["audio", "open models"],
+      "note": "Nemotron-3.5-Transcribe is an open-weight model that turns speech into text and can also translate speech, label who is speaking and answer questions about audio. It covers 40 languages and accepts recordings up to one hour. The model card lists a license that permits commercial use.",
+      "sources": [["Model card", "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"]],
+      "chart": {"stats": [["Hugging Face likes", "hf|nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B|likes"]]}
+    }
+  ],
+  "also_repos": [],
+  "also_hn_exclude": ["Anthropic S-1", "Anthropic trained Claude", "AI promised less work", "AI isn't replacing SREs"],
+  "skipped": [
+    ["GPT-6.1 Terra", "OpenAI's page blocked bots, so the claims could not be checked."],
+    ["Wikipedia views for ChatGPT, Claude and Gemini roughly doubling", "No cause could be confirmed on a primary source."],
+    ["Faster-whisper installs up 77%", "No release or event explains the rise."],
+    ["Claude Code extension backdoor reports", "Only third-party reports; no primary source checked."],
+    ["Anthropic S-1", "Company news."]
+  ],
+  "unreliable": ["Claude Code"],
+  "watchlist_changes": [],
+  "review": {"mode": "agent", "checked": 3, "fixed": [], "dropped": []}
+}
