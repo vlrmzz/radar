@@ -1,0 +1,35 @@
+{
+  "week": "2026-w46",
+  "summary": "Moonshot AI released open weights for its Kimi K3.1 Pro model, and a new open model turns a single photo into a 3D scene.",
+  "picks": [
+    {
+      "title": "Kimi K3.1 Pro: open weights for a 2.8-trillion-parameter model",
+      "signal": "1736 likes on Hugging Face",
+      "tags": ["models", "open models"],
+      "note": "Moonshot AI published the weights of Kimi K3.1 Pro, which its model card calls an open-weight, multimodal model built for agent tasks such as coding and financial research. It is a mixture-of-experts design (only part of the model runs for each token) with 2.8T total and 104B active parameters, and a 1-million-token context window. The license is a custom Kimi license, not a standard open-source one.",
+      "sources": [["Model card", "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"], ["Hacker News thread", "https://news.ycombinator.com/item?id=50366999"]],
+      "chart": {"stats": [["Hugging Face likes", "hf|moonshotai/Kimi-K3.1-Pro|likes"], ["Hacker News points", "hn|Kimi K3.1 Pro"], ["Hacker News comments", "hn|Kimi K3.1 Pro|comments"]]}
+    },
+    {
+      "title": "Idol turns one image into a 3D Gaussian splat",
+      "signal": "1430 likes on Hugging Face",
+      "tags": ["image", "open models"],
+      "note": "Idol is an open model that takes one picture of an object and generates a 3D Gaussian splat (a 3D scene made of many small colored blobs), including sides the picture never showed. The model card says it uses 7.2 GB of GPU memory, runs on consumer GPUs and writes a standard .ply file. It needs access to two gated encoder models and an NVIDIA GPU. The license is Apache 2.0.",
+      "sources": [["Model card", "https://huggingface.co/speridlabs/idol"]],
+      "chart": {"stats": [["Hugging Face likes", "hf|speridlabs/idol|likes"]]}
+    }
+  ],
+  "also_repos": [],
+  "also_hn_exclude": ["Claude Code sends your email", "Postman silently", "Goldman Sachs is pulling", "Google will turn off search", "Goodbye Claude", "Fujifilm", "Claude Code's \"Don't Ask Again\"", "Tell HN: Gemini trains", "AI is forcing us"],
+  "skipped": [
+    ["Astra / Qwen weight-editing posts", "Disputed blog posts, not a primary release."],
+    ["Vibe coding Wikipedia views up 40%", "No cause could be confirmed on a primary source."],
+    ["OpenAI Agents SDK installs up 49%", "Latest release is from October; no event explains the rise."],
+    ["Qwen Code installs up 44%", "No release notes could be checked."],
+    ["faster-whisper installs up 64%", "No release or event explains the rise."],
+    ["Weaviate and SGLang installs down 45%", "Noisy series with no cause on a primary source."]
+  ],
+  "unreliable": ["Claude Code"],
+  "watchlist_changes": [],
+  "review": {"mode": "agent", "checked": 2, "fixed": [], "dropped": []}
+}
